@@ -1,0 +1,19 @@
+.main {
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.6rem;
+  color: #1c1d1f;
+}
+.main > h3 {
+  font-size: x-large;
+  font-weight: 700;
+  margin: 1.3rem 0;
+}
+.main > h6 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 0.3rem 0.2rem;
+}
+.accordions {
+  border: 1px solid #d1d7dc;
+}

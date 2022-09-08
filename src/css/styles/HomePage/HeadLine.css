@@ -1,0 +1,14 @@
+.headline {
+    margin: 0rem 2rem;
+    line-height: 1.4;
+  }
+  .headline h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    padding: 0;
+    font-weight: 600;
+  }
+  .headline p {
+    margin: 0.5rem 0;
+    padding: 0;
+  }

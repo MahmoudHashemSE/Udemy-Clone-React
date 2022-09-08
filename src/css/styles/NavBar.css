@@ -1,0 +1,185 @@
+nav {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #1c1d1f;
+  align-items: center;
+  justify-content: center;
+}
+.nav-links {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+  align-items: center;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 24%)
+}
+.nav-links div {
+  list-style: none;
+  display: inline-flex;
+  padding: 0 0rem;
+  width: auto;
+  height: 100%;
+  color: black;
+}
+.nav-links .form {
+  width: 100%;
+  display: flex;
+  height: 40px;
+}
+
+.nav-links div a {
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
+}
+a:hover {
+  color: none;
+}
+.udemy-business {
+  margin: 0 0.2rem;
+}
+.teach-on-udemy {
+  margin-left: 1rem;
+}
+.search-bar {
+  display: block;
+  max-width: none;
+  min-width: 50px;
+  flex-grow: 1;
+  height: 4.8rem;
+  border: 1px solid #1c1d1f;
+  background-color: #f7f9fa;
+  border-radius: 9999px;
+  margin: 0 1.2rem;
+}
+
+.mui-search-icon {
+  transform: translate(-7px, 0px);
+  color: #a0a0a0;
+  font-size: x-large;
+  align-self: center;
+}
+.search-button:hover {
+  cursor: pointer;
+  color: #5624d0;
+}
+input[type="search"]:focus {
+  outline: none;
+}
+.sign-up {
+  position: relative;
+  border: 1px black solid;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  max-width: none;
+  color: #fff;
+  background-color: #1c1d1f;
+  text-decoration: none;
+  max-height: 2.6rem;
+  padding: 0.8rem;
+  margin: 0 6px 0 3px;
+}
+.sign-up:hover {
+  color: #fff;
+}
+.sign-up > h3 {
+  font-weight: 800;
+}
+.lang:hover {
+  background-color: #e0e0e0;
+}
+.lang {
+  border: 1px black solid;
+  margin-right: 1rem;
+}
+.language {
+  position: relative;
+  display: block;
+  justify-content: center;
+  color: #1c1d1f;
+  text-decoration: none;
+}
+
+.search-icon {
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.shopping-cart {
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 5px;
+  color: #1c1d1f;
+}
+.shopping-cart:hover{
+  color: #5624d0;
+}
+.search-bar input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #f7f9fa;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .udemy-business {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .teach-on-udemy {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .border {
+    width: 100%;
+    height: auto;
+  }
+  .navWebpage {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+  }
+  .mobile {
+    position: static;
+    display: flex;
+    visibility: inherit;
+  }
+  .search-icon {
+    display: block;
+  }
+  .nav-links {
+    transform: translate(-0px, 0px);
+  } .search-icon {
+    display: block;
+  }
+  .nav-links {
+    transform: translate(-0px, 0px);
+  }
+}
+

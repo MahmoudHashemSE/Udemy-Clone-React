@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: #1c1d1f;
+}
+.info > h3 {
+  font-size: large;
+  font-weight: 700;
+  color: #5624d0;
+  text-decoration-line: underline;
+}
+.info > h3:hover {
+  cursor: pointer;
+}
+.info > p {
+  color: #6a6f73;
+  margin: 0.4rem 0 0.9rem 0;
+}
+.icon {
+  transform: scale(0.8);
+  margin: 0 1rem;
+}
+.photo {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.imgStats {
+  display: flex;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.about > p {
+  color: #1c1d1f;
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 0.8rem;
+  line-height: 1rem;
+}
+.title {
+  font-size: x-large;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.stats > div {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  line-height: 1.3rem;
+  margin: 0.25rem 0;
+}
+.stats > div > p {
+  font-size: 15px;
+}
+.showMore {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #5624d0;
+}
+.showMore > h3 {
+  font-size: small;
+  font-weight: 800;
+}
+.showMore:hover {
+  cursor: pointer;
+}

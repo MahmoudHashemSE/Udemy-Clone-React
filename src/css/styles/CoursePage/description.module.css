@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: #1c1d1f;
+}
+.title {
+  font-size: x-large;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.showMore {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #5624d0;
+}
+.showMore > h3 {
+  font-size: small;
+  font-weight: 800;
+}
+.showMore:hover {
+  cursor: pointer;
+}
+.descriptionDetailed {
+  display: flex;
+  flex-direction: column;
+}
+.descriptionDetailed > p {
+  color: #46494e;
+  font-weight: 100;
+  font-size: 14px;
+  margin-bottom: 0.8rem;
+  line-height: 1rem;
+}

@@ -1,0 +1,182 @@
+   .card{
+    max-width: 242px;
+    padding: 0rem 0.2rem;
+   }
+   .link{
+    text-decoration: none;
+    color: inherit;
+   }
+   .coursesPictures {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    padding-top: 1rem;
+  }
+  .courseContent {
+    box-sizing: border-box;
+    margin: auto;
+    flex: 0 0 15%;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 240px;
+    height: 265px;
+    background-color: white;
+  }
+  .courseContent > h3{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 3px 0;
+    padding: 0;
+  }
+  .courseContent:hover {
+    cursor: pointer;
+  }
+  .border {
+    border: 1px solid #d1d7dc;
+    margin-bottom: 0;
+    padding: 0;
+    width: "240";
+    height: "135";
+  }
+  /* Courses section */
+  .coursesContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+    width: 100%;
+    border: 1px solid #d1d7dc;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .coursesContainer > article > h3{
+    font-size: x-large; font-weight: 600; padding: 0.5rem 0
+  }
+  .coursesContainer  article{
+    text-align: start;
+  }
+  .exploreButton {
+    padding: 0 0.75rem; font-size: medium; font-weight: bold
+  }
+  
+  .threadbit .thread {
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+  }
+
+  .instructors {
+    color: #6a6f73;
+    margin: 2px 0;
+    padding: 0;
+    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+      Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+      segoe ui emoji, segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 11px;
+  }
+  .courseRating {
+    display: flex;
+  }
+  .ratingNumber {
+    color: #b4690e;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 3px 0;
+    padding: 0;
+  }
+  .reviewsNumber {
+    color: #6a6f73;
+    font-size: 11px;
+    font-weight: 400;
+    margin: 3px 0;
+    padding: 0;
+    align-self: center;
+  }
+  .stars {
+    align-self: center;
+    padding: 0 4px;
+  }
+  .courseTitle h3 {
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 2px 0;
+    padding: 0;
+  }
+  .bestseller {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #eceb98;
+    color: #3d3c0a;
+    display: inline-block;
+    margin-top: 6px;
+    padding: 0.3rem 0.6rem;
+    white-space: nowrap;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02rem;
+    font-size: 11px;
+  }
+  .pythonArticle {
+    margin-bottom: 20px;
+    margin: 1rem 1.8rem;
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .coursesContainer {
+      width: 96%;
+      display: flex;
+      border: 1px solid #d1d7dc;
+      overflow: hidden;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      margin: auto;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .courseContent {
+      flex: 0 0 30%;
+      max-width: 240px;
+    }
+    .coursesContainer {
+      width: 96%;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .courseContent {
+      flex: 0 0 30%;
+      max-width: 240px;
+    }
+    .coursesContainer {
+      width: 96%;
+    }
+  }
+
+@media only screen and (max-width: 850px) {
+  .border {
+    width: 100%;
+    height: auto;
+  }
+  .webpage {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+  }
+  .mobile {
+    position: static;
+    display: flex;
+    visibility: inherit;
+  }
+}
