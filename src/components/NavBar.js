@@ -12,7 +12,7 @@ function NavBar() {
     //redirect to homepage with search queue
     window.location.href = searchText ? `/?search=${searchText}` : `/`;
   };
-  
+
   return (
     <nav>
       <section className="nav-links">
@@ -39,8 +39,10 @@ function NavBar() {
           </a>
         </div>
         <div className="search-bar navWebpage" style={{ padding: "0 1rem" }}>
-          <SearchIcon className="mui-search-icon" />
           <form className="form" action="" onSubmit={handleSearch}>
+            <button className="search-button" type="submit" value="Search">
+              <SearchIcon className="mui-search-icon" />{" "}
+            </button>
             <input
               type="search"
               id="course-search"
@@ -50,7 +52,6 @@ function NavBar() {
               placeholder="Search for anything"
               onChange={(e) => setSearchText(e.target.value)}
             />
-            <input className="search-button" type="submit" value="Search" />
           </form>
         </div>
         <div className="udemy-business">

@@ -66,6 +66,11 @@ a:hover {
   font-size: x-large;
   align-self: center;
 }
+.search-button {
+  border: 0;
+  background-color: transparent;
+  
+}
 .search-button:hover {
   cursor: pointer;
   color: #5624d0;
@@ -73,6 +78,7 @@ a:hover {
 input[type="search"]:focus {
   outline: none;
 }
+
 .sign-up {
   position: relative;
   border: 1px black solid;
