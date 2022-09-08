@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../css/styles/CoursePage/sidebar.module.css";
+import styles from "../../styles/CoursePage/sidebar.module.css";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import MobileFriendlyIcon from "@mui/icons-material/MobileFriendly";
@@ -12,7 +12,6 @@ function Sidebar({ course, footerRef, footerOnScreen, topContainerOnScreen }) {
   var footerLocation = footerRef.current
     ? footerRef.current.offsetTop - 845
     : 0;
-  console.log(footerLocation);
   const sidebarStyle = {
     width: "20rem",
     zIndex: "7",

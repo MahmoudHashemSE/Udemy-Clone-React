@@ -1,10 +1,9 @@
 import React from "react";
-import stars from "../../media/stars.png";
-import Rating from '@mui/material/Rating';
-import styles from "../../css/styles/HomePage/courseCard.module.css";
+import stars from "../../assets/stars.png";
+import styles from "../../styles/HomePage/courseCard.module.css";
 import { Link } from "react-router-dom";
 
-const CourseCard = ({ course }) => {
+function CourseCard({ course }) {
   return (
     <Link to={`/course/${course.id}`} className={styles.link}>
       <div className={styles.card}>
@@ -21,16 +20,22 @@ const CourseCard = ({ course }) => {
         </article>
         <div className={styles.courseRating}>
           <h3 className={styles.ratingNumber}>{course.rating}</h3>
-          <Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly />
+          <img
+            className={styles.stars}
+            src={stars}
+            alt="course reviews"
+            height="12px"
+            width="64px"
+          />
           <h3 className={styles.reviewsNumber}>({course.people})</h3>
         </div>
-        <h3 style={{ fontWeight: "800" }}>E£{course.price}</h3>
+        <h3 style={{fontWeight:"800"}}>E£{course.price}</h3>
         {course.bestseller && (
           <aside className={styles.bestseller}>Bestseller</aside>
         )}
       </div>
     </Link>
   );
-};
+}
 
 export default CourseCard;

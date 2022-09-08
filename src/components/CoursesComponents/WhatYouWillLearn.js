@@ -1,5 +1,5 @@
 import React, {forwardRef} from "react";
-import styles from "../../css/styles/CoursePage/whatYouWillLearn.module.css";
+import styles from "../../styles/CoursePage/whatYouWillLearn.module.css";
 import CheckIcon from "@mui/icons-material/Check";
 
 const WhatYouWillLearn = forwardRef(({ course }, ref) => {
@@ -16,7 +16,8 @@ const WhatYouWillLearn = forwardRef(({ course }, ref) => {
     <div id="whatYouWillLearn" ref={ref} className={styles.container}>
       <h3>What you'll learn</h3>
       <div className={styles.learnings}>
-        {learnings}
+        {learnings ||
+          "We are currently working on adding this part to this course."}
       </div>
     </div>
   );

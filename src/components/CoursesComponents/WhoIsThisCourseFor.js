@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../css/styles/CoursePage/whoIsThisCourseFor.module.css";
+import styles from "../../styles/CoursePage/whoIsThisCourseFor.module.css";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 function WhoIsThisCourseFor({ course }) {
   let whoIsThisFor = "";
@@ -15,7 +15,8 @@ function WhoIsThisCourseFor({ course }) {
       <div className={styles.container}>
         <h3>Who this course is for:</h3>
         <div className={styles.whoIsThisFor}>
-          {whoIsThisFor}
+          {whoIsThisFor ||
+            "We are currently working on adding this part to this course."}
         </div>
       </div>
     );

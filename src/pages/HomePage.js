@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import CoursesContainer from "../components/HomePage/CoursesContainer";
-import courses from "./courses";
 import Categories from "../components/HomePage/Categories";
 import BillBoard from "../components/HomePage/BillBoard";
 import HeadLine from "../components/HomePage/HeadLine";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-function HomePage() {
+function HomePage({courses}) {
   const [searchParams, setSearchParams] = useSearchParams();
   let searchText = searchParams.get("search") || "";
   const coursesFiltered = courses.filter(course => (course.title.toLowerCase()).includes(searchText.toLowerCase()));

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/styles/HomePage/Categories.css";
+import "../../styles/HomePage/Categories.css";
 import Grid from "@mui/material/Grid";
 
 function Categories() {

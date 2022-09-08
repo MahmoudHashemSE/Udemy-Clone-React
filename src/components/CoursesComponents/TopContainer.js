@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import styles from "../../css/styles/CoursePage/topContainer.module.css";
+import styles from "../../styles/CoursePage/topContainer.module.css";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
@@ -44,7 +44,8 @@ const TopContainer = forwardRef(({ course, topContainerOnScreen }, ref) => {
           </div>
           <h3>{course.title}</h3>
           <p>
-            {course.description}
+            {course.description ||
+              "This is a default description for the course. Please make sure to add a description to this course to the data base."}
           </p>
           <span className={styles.reviews}>
             {course.bestseller && (

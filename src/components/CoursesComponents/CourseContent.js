@@ -1,6 +1,6 @@
 import React from "react";
 import ContentAccordion from "./ContentAccordion";
-import styles from "../../css/styles/CoursePage/courseContent.module.css";
+import styles from "../../styles/CoursePage/courseContent.module.css";
 import { forwardRef } from "react";
 
 const CourseContent = forwardRef(({ course }, ref) => {

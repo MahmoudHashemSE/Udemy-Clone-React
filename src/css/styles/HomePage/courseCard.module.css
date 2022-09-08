@@ -2,6 +2,9 @@
     max-width: 242px;
     padding: 0rem 0.2rem;
    }
+   .card:hover {
+    color: #5624d0;
+   }
    .link{
     text-decoration: none;
     color: inherit;

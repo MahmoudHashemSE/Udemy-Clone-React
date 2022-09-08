@@ -1,6 +1,6 @@
 import React from 'react'
-import clock from "../../media/clock.163af8cf8a54d0cb67aa.jpg"
-import "../../css/styles/HomePage/BillBoard.css"
+import clock from "../../assets/clock.jpg"
+import "../../styles/HomePage/BillBoard.css"
 function BillBoard() {
   return (
     <header className="billboard">

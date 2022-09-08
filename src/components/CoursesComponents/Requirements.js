@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../css/styles/CoursePage/requirements.module.css'
+import styles from '../../styles/CoursePage/requirements.module.css'
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 function Requirements({course}) {
   let requirements = "";
@@ -14,7 +14,8 @@ function Requirements({course}) {
     <div className={styles.container}>
       <h3>Requirements</h3>
       <div className={styles.requirements}>
-        {requirements}
+        {requirements ||
+          "We are currently working on adding this part to this course."}
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../css/styles/CoursePage/courseBlackBar.module.css";
+import styles from "../../styles/CoursePage/courseBlackBar.module.css";
 import StarIcon from "@mui/icons-material/Star";
 import Navigation from "./Navigation";
 
