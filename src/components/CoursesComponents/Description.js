@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import styles from "../../styles/CoursePage/description.module.css";
+import styles from "../../css/styles/CoursePage/description.module.css";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import WhoIsThisCourseFor from "./WhoIsThisCourseFor";
-function Description({ course }) {
+const Description = ({ course }) => {
   const [showMore, setShowMore] = useState("more");
   let descriptionDetailed = "";
   if (course.descriptionDetailed)

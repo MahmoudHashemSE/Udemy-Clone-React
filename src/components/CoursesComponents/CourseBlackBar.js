@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../../styles/CoursePage/courseBlackBar.module.css";
+import styles from "../../css/styles/CoursePage/courseBlackBar.module.css";
 import StarIcon from "@mui/icons-material/Star";
 import Navigation from "./Navigation";
 
-function CourseBlackBar({ course, topContainerOnScreen }) {
+const CourseBlackBar = ({ course, topContainerOnScreen }) => {
   return (
     <>
       <div className={styles.container}>

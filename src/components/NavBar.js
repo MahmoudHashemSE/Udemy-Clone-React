@@ -1,23 +1,24 @@
 import React, { useState } from "react";
-import "../styles/NavBar.css";
+import "../css/styles/NavBar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
 import LanguageIcon from "@mui/icons-material/LanguageOutlined";
+import { useNavigate } from "react-router-dom";
 
-function NavBar() {
+const NavBar = () => {
   const [searchText, setSearchText] = useState("");
+  const navigate = useNavigate();
   const handleSearch = (e) => {
     e.preventDefault();
-    //redirect to homepage with search queue
-    window.location.href = searchText ? `/?search=${searchText}` : `/`;
+    navigate(searchText ? `/?search=${searchText}` : "/");
   };
-  
+
   return (
     <nav>
       <section className="nav-links">
         <div className="mobile">
-          <a href="" className="shopping-cart">
+          <a href="/" className="shopping-cart">
             <MenuIcon />
           </a>
         </div>
@@ -34,13 +35,15 @@ function NavBar() {
           </figure>
         </div>
         <div className="navWebpage">
-          <a href="" className="dark">
+          <a href="/" className="dark">
             <h3>Categories</h3>
           </a>
         </div>
         <div className="search-bar navWebpage" style={{ padding: "0 1rem" }}>
-          <SearchIcon className="mui-search-icon" />
           <form className="form" action="" onSubmit={handleSearch}>
+          <button className="search-button" type="submit" value="Search">
+            <SearchIcon className="mui-search-icon" />
+          </button>
             <input
               type="search"
               id="course-search"
@@ -50,45 +53,44 @@ function NavBar() {
               placeholder="Search for anything"
               onChange={(e) => setSearchText(e.target.value)}
             />
-            <input className="search-button" type="submit" value="Search" />
           </form>
         </div>
         <div className="udemy-business">
-          <a href="" className="dark">
+          <a href="/" className="dark">
             <h3>Udemy Business</h3>
           </a>
         </div>
         <div className="teach-on-udemy">
-          <a href="" className="dark">
+          <a href="/" className="dark">
             <h3>Teach on Udemy</h3>
           </a>
         </div>
         <div>
-          <a href="" className="search-icon">
+          <a href="/" className="search-icon">
             <SearchIcon />
           </a>
-          <a href="" className="shopping-cart">
+          <a href="/" className="shopping-cart">
             <ShoppingCartIcon />
           </a>
         </div>
         <div className="navWebpage button-margin">
-          <a href="" className="white-button">
+          <a href="/" className="white-button">
             <h3>Log in</h3>
           </a>
         </div>
         <div className="navWebpage button-margin">
-          <a href="" className="sign-up">
+          <a href="/" className="sign-up">
             <h3>Sign up</h3>
           </a>
         </div>
         <div className="navWebpage lang">
-          <a href="" className="language" style={{ padding: "5px 7px" }}>
+          <a href="/" className="language" style={{ padding: "5px 7px" }}>
             <LanguageIcon />
           </a>
         </div>
       </section>
     </nav>
   );
-}
+};
 
 export default NavBar;

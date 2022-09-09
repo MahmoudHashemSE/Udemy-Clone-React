@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import styles from "../../styles/CoursePage/review.module.css";
-
+import styles from "../../css/styles/CoursePage/review.module.css";
 import Avatar from "@mui/material/Avatar";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";

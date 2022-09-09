@@ -1,9 +1,10 @@
-import React from "react";
+import React,{useContext} from "react";
 import CourseCard from "./CourseCard";
-import styles from "../../styles/HomePage/courseCard.module.css";
+import styles from "../../css/styles/HomePage/courseCard.module.css";
 import CircularProgress from "@mui/material/CircularProgress";
-
-function CoursesContainer({ courses, title, description }) {
+import { dataContext } from "../../App";
+const CoursesContainer = ({ courses, title, description }) => {
+  const {isLoading} = useContext(dataContext);
   //max 3 lines for description
   const textStyle = {
     maxWidth: "79%",
@@ -29,17 +30,16 @@ function CoursesContainer({ courses, title, description }) {
       <div
         className="webpage"
         style={{
-          margin: "6px 0 30px 0",
           padding: "0",
           display: "flex",
           margin: "0px 0px 0px 1.8rem",
         }}
       >
-        <a href="" className="white-button">
+        <a href="/" className="white-button">
           <h3 className="explore-button">Explore Python</h3>
         </a>
       </div>
-      <CircularProgress style={{margin:"auto"}} color="secondary" />
+      {isLoading && <CircularProgress style={{margin:"auto"}} color="secondary" />}
       <div className={styles.coursesPictures}>{coursesList}</div>
     </div>
   );

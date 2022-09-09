@@ -28,8 +28,8 @@
     padding: 1rem;
     margin: 0;
     line-height: 1;
-    max-width: 400px;
-    transform: translate(-90%, 55px);
+    max-width: 300px;
+    transform: translate(-130%, 55px);
   }
   .billboard-content-box h2 {
     font-size: 2.2rem;
@@ -41,7 +41,6 @@
     margin: 0 2rem 0 0;
     padding: 0;
     line-height: 1.5;
-    font-weight: lighter;
   }
   
   .headline {

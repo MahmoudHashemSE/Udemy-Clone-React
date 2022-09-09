@@ -1,5 +1,5 @@
 import React, {forwardRef} from "react";
-import styles from "../../styles/CoursePage/whatYouWillLearn.module.css";
+import styles from "../../css/styles/CoursePage/whatYouWillLearn.module.css";
 import CheckIcon from "@mui/icons-material/Check";
 
 const WhatYouWillLearn = forwardRef(({ course }, ref) => {

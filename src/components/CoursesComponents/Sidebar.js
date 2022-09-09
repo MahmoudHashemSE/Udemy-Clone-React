@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/CoursePage/sidebar.module.css";
+import styles from "../../css/styles/CoursePage/sidebar.module.css";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import MobileFriendlyIcon from "@mui/icons-material/MobileFriendly";
@@ -8,7 +8,7 @@ import BrowserUpdatedIcon from "@mui/icons-material/BrowserUpdated";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import OndemandVideoOutlinedIcon from "@mui/icons-material/OndemandVideoOutlined";
 
-function Sidebar({ course, footerRef, footerOnScreen, topContainerOnScreen }) {
+const Sidebar = ({ course, footerRef, footerOnScreen, topContainerOnScreen }) => {
   var footerLocation = footerRef.current
     ? footerRef.current.offsetTop - 845
     : 0;

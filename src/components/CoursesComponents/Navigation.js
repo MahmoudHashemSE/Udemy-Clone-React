@@ -1,5 +1,5 @@
-import React, { useState, useContext } from "react";
-import styles from "../../styles/CoursePage/navigation.module.css";
+import React, { useContext } from "react";
+import styles from "../../css/styles/CoursePage/navigation.module.css";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { refsContext } from "../../pages/CoursePage";
@@ -9,7 +9,7 @@ const buttonStyle = {
   fontWeight: "800",
 };
 
-function Navigation() {
+const Navigation = () => {
   const {
     whatYouLearnRef,
     contentRef,

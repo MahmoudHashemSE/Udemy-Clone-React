@@ -1,6 +1,5 @@
 nav {
   width: 100%;
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1;
   color: #1c1d1f;
@@ -18,7 +17,7 @@ nav {
   margin: auto;
   background-color: #fff;
   align-items: center;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 24%)
+  box-shadow: 0px 1px 15px 0px rgb(216, 209, 209);
 }
 .nav-links div {
   list-style: none;
@@ -66,11 +65,12 @@ a:hover {
   font-size: x-large;
   align-self: center;
 }
+
 .search-button {
   border: 0;
   background-color: transparent;
-  
 }
+
 .search-button:hover {
   cursor: pointer;
   color: #5624d0;
@@ -78,7 +78,6 @@ a:hover {
 input[type="search"]:focus {
   outline: none;
 }
-
 .sign-up {
   position: relative;
   border: 1px black solid;
@@ -96,9 +95,7 @@ input[type="search"]:focus {
 .sign-up:hover {
   color: #fff;
 }
-.sign-up > h3 {
-  font-weight: 800;
-}
+
 .lang:hover {
   background-color: #e0e0e0;
 }

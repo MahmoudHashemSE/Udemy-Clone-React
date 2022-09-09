@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import Review from "./Review";
-import styles from "../../styles/CoursePage/reviews.module.css";
+import styles from "../../css/styles/CoursePage/reviews.module.css";
 
 const Reviews = forwardRef(({ course }, ref) => {
   let reviews = "";

@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "../../styles/CoursePage/studentFeedback.module.css";
+import styles from "../../css/styles/CoursePage/studentFeedback.module.css";
 import LinearDeterminate from "./LinearDeterminate";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 
-function BarWithPercentage({ stars, percentage }) {
+const BarWithPercentage = ({ stars, percentage }) => {
   return (
     <div className={styles.barContainer} styles={{ width: "100%" }}>
       <LinearDeterminate value={percentage} />

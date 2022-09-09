@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import styles from "../../styles/CoursePage/topContainer.module.css";
+import styles from "../../css/styles/CoursePage/topContainer.module.css";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
@@ -12,7 +12,7 @@ const TopContainer = forwardRef(({ course, topContainerOnScreen }, ref) => {
       Development
     </h3>,
     <h3 key="3" className={styles.breadCrumb}>
-      {course.category.charAt(0).toUpperCase() + course.category.slice(1)}
+      {course.category && (course.category.charAt(0).toUpperCase() + course.category.slice(1))}
     </h3>,
   ];
   return (
@@ -56,7 +56,7 @@ const TopContainer = forwardRef(({ course, topContainerOnScreen }, ref) => {
               className={styles.rating}
               style={{ fontSize: "medium" }}
               name="text-feedback"
-              value={course.rating}
+              value={course?course.rating:0}
               readOnly
               precision={0.5}
               emptyIcon={
@@ -74,7 +74,7 @@ const TopContainer = forwardRef(({ course, topContainerOnScreen }, ref) => {
           </span>
         </div>
       </div>
-      <Navigation topContainerOnScreen={topContainerOnScreen}/>
+      <Navigation topContainerOnScreen={topContainerOnScreen} />
     </div>
   );
 });

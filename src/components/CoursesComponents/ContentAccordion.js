@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
-import styles from "../../styles/CoursePage/contentAccordion.module.css";
+import styles from "../../css/styles/CoursePage/contentAccordion.module.css";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
@@ -27,7 +27,7 @@ const AccordionSummary = styled((props) => (
   },
 }));
 
-function ContentAccordion({info, title}) {
+const ContentAccordion = ({info, title}) => {
   let infos = "";
   if (info)
     infos = info.map((x, index) => <div key={index} className={styles.info}><PlayCircleIcon fontSize="small" className={styles.playIcon}/><h3 >{x}</h3></div>);

@@ -2,9 +2,6 @@
     max-width: 242px;
     padding: 0rem 0.2rem;
    }
-   .card:hover {
-    color: #5624d0;
-   }
    .link{
     text-decoration: none;
     color: inherit;
@@ -21,6 +18,9 @@
     box-sizing: border-box;
     overflow-y: hidden;
     padding-top: 1rem;
+  }
+  .card:hover {
+    color: blueviolet;
   }
   .courseContent {
     box-sizing: border-box;
@@ -83,9 +83,6 @@
     color: #6a6f73;
     margin: 2px 0;
     padding: 0;
-    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
-      Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
-      segoe ui emoji, segoe ui symbol;
     font-weight: 400;
     line-height: 1.4;
     font-size: 11px;
@@ -113,13 +110,12 @@
     padding: 0 4px;
   }
   .courseTitle h3 {
-    font-size: 14px;
-    font-weight: bolder;
+    font-size: 17px;
+    font-weight: 500;
     margin: 2px 0;
     padding: 0;
   }
   .bestseller {
-    font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     background-color: #eceb98;
     color: #3d3c0a;

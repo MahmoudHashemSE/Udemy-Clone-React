@@ -15,7 +15,6 @@ const Footer = forwardRef((props,  ref) => {
           </a>
         </figure>
       </div>
-      <div style={{ padding: "1rem" }}>© 2022 Udemy, Mustafa Mahmoud.</div>
     </footer>
   );
 });

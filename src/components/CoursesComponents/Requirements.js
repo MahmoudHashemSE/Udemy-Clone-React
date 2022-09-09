@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from '../../styles/CoursePage/requirements.module.css'
+import styles from '../../css/styles/CoursePage/requirements.module.css'
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-function Requirements({course}) {
+const Requirements = ({course}) => {
   let requirements = "";
   if (course.requirements)
     requirements = course.requirements.map((requirement, index) => (

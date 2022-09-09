@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../../styles/CoursePage/whoIsThisCourseFor.module.css";
+import styles from "../../css/styles/CoursePage/whoIsThisCourseFor.module.css";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-function WhoIsThisCourseFor({ course }) {
+const WhoIsThisCourseFor = ({ course }) => {
   let whoIsThisFor = "";
   if (course.whoIsThisFor)
     whoIsThisFor = course.whoIsThisFor.map((requirement, index) => (
