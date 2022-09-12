@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useRef} from "react";
 import styles from "../../css/styles/HomePage/courseCard.module.css";
 import Rating from "@mui/material/Rating";
+import CoursePopup from "./CoursePopup";
 import { Link } from "react-router-dom";
 
 const CourseCard = ({ course }) => {
+  const cardRef = useRef();
   return (
     <Link to={`/course/${course.id}`} className={styles.link}>
       <div className={styles.card}>
@@ -18,7 +20,7 @@ const CourseCard = ({ course }) => {
           <h3>{course.title}</h3>
           <h6 className={styles.instructors}>{course.author}</h6>
         </article>
-        <div className={styles.courseRating}>
+        <div ref={cardRef} className={styles.courseRating}>
           <h3 className={styles.ratingNumber}>{course.rating}</h3>
           <Rating
             name="half-rating-read"
@@ -28,11 +30,15 @@ const CourseCard = ({ course }) => {
           />
           <h3 className={styles.reviewsNumber}>({course.people})</h3>
         </div>
-        <h3 style={{ fontWeight: "800" }}>E£{course.price}</h3>
+        <h3 >E£{course.price}</h3>
         {course.bestseller && (
           <aside className={styles.bestseller}>Bestseller</aside>
         )}
+        <div className={styles.popup}>
+          <CoursePopup course={course} parent={cardRef} />
+        </div>
       </div>
+      
     </Link>
   );
 };

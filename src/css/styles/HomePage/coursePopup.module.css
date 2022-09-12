@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  position: absolute;
+  color: hsl(220, 5%, 12%);
+  top: 0rem;
+  left: 17rem;
+  transform: translateY(-0.8rem);
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 15rem;
+  margin: 0 auto;
+  box-shadow: 0 -2px 4px rgb(0 0 0 / 8%), 0 -4px 12px rgb(0 0 0 / 16%);
+  z-index: 2;
+  padding: 1rem;
+}
+
+.bestseller {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 0;
+  background-color: #eceb98;
+  color: #3d3c0a;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  white-space: nowrap;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02rem;
+  font-size: 11px;
+  width: 3rem;
+}
+.checkMark {
+  transform: scale(0.8);
+  margin-right: 1rem;
+}
+.learnings {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.title {
+  font-size: large;
+  font-weight: 700;
+}
+.container > p {
+  font-size: small;
+}
+.container > * {
+  margin: 0.2rem 0;
+}
+.learnings > div {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  line-height: 1.3rem;
+  margin: 0.2rem 0;
+}
+.hours {
+  color: #6a6f73;
+  font-size: 11px;
+  margin-top: 0.6rem;
+}
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 90%;
+  }
+}
