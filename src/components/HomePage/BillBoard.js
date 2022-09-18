@@ -1,5 +1,5 @@
 import React from 'react'
-import clock from "../../images/clock.jpg"
+import clock from "../../Images/clock.jpg"
 import "../../css/styles/HomePage/BillBoard.css"
 const BillBoard = () => {
   return (
