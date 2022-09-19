@@ -11,10 +11,10 @@ function CoursePopup({ course, parent }) {
   };
   useEffect(() => {
     update();
-  }, [parent.current]);
+  });
   useEffect(() => {
     window.addEventListener("resize", update);
-  }, []);
+  });
   //handling popover position
   let style = {
     top: "-3rem",

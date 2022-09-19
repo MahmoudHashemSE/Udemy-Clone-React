@@ -1,4 +1,10 @@
-import React, { useState, useRef, createContext, useContext, useLayoutEffect } from "react";
+import React, {
+  useState,
+  useRef,
+  createContext,
+  useContext,
+  useLayoutEffect,
+} from "react";
 import { useParams } from "react-router-dom";
 import CourseBlackBar from "../components/CoursesComponents/CourseBlackBar";
 import CourseContent from "../components/CoursesComponents/CourseContent";
@@ -27,15 +33,16 @@ const useOnScreen = (ref, rootMargin = "0px") => {
         rootMargin,
       }
     );
-    if (ref.current) {
-      observer.observe(ref.current);
+    let curRef = ref.current;
+    if (curRef) {
+      observer.observe(curRef);
     }
     return () => {
-      observer.unobserve(ref.current);
+      observer.unobserve(curRef);
     };
-  }, []); // Empty array ensures that effect is only run on mount and unmount
+  }, [ref, rootMargin]); // Empty array ensures that effect is only run on mount and unmount
   return isIntersecting;
-}
+};
 
 //to pass the refs to navigator
 export const refsContext = createContext();
@@ -45,7 +52,7 @@ function CoursePage() {
   let instructors = data ? data.instructors : [];
   //extract course id from the url
   const params = useParams();
-  const courseID = params.ID;
+  const courseID = Number(params.ID);
 
   //initial navigation value
   const [value, setValue] = useState("overview");
@@ -54,13 +61,17 @@ function CoursePage() {
   let course = 0;
   if (courses)
     courses.forEach(function (x) {
-      if (x.id == courseID) course = x;
+      if (x.id === courseID) {
+        course = x;
+      }
     });
   //get instructor
   let instructor = 0;
   if (instructors)
     instructors.forEach(function (x) {
-      if (x.id == course.instructor) instructor = x;
+      if (x.id === course.instructor) {
+        instructor = x;
+      }
     });
 
   const topContainerRef = useRef();

@@ -11,7 +11,7 @@ import { dataContext } from "../App";
 function HomePage() {
   const { data } = useContext(dataContext);
   let courses = data ? data.courses : [];
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   let searchText = searchParams.get("search") || "";
   const coursesFiltered = courses.filter((course) =>
     course.title.toLowerCase().includes(searchText.toLowerCase())

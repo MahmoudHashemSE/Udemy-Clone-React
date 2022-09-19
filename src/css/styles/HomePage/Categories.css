@@ -11,8 +11,10 @@
   margin: 10px 0;
   align-self: center;
 }
+.top-categories img:hover {
+  transform: scale(1.2);
+}
 .category-card:hover {
-  color: blueviolet;
   cursor: pointer;
 }
 .img-wrapper {
