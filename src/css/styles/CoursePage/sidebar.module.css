@@ -1,0 +1,180 @@
+.sidebar {
+  width: 20rem;
+  z-index: 7;
+  border-bottom: 1px solid #d1d7dc;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  background-color: white;
+  position: fixed;
+  top: 0;
+  transform: translateX(43rem);
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.courseImg {
+  margin: 1px;
+  position: relative;
+}
+.courseImg:hover {
+  cursor: pointer;
+}
+
+.iconContainer {
+  display: flex;
+  float: left;
+  position: absolute;
+  left: 43%;
+  top: 39%;
+  z-index: 1;
+  padding: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: white;
+}
+.preview {
+  float: left;
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  line-height: 2rem;
+  z-index: 1;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: small;
+  text-align: center;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(28, 29, 31, 0) 0%,
+    rgba(28, 29, 31, 0.9) 100%
+  );
+}
+
+.courseInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.courseInfo > * {
+  margin: 5px 0;
+  width: 100%;
+}
+.price {
+  font-size: xx-large;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+
+.moneyBack {
+  font-size: 11px;
+  color: #1c1d1f;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+.whiteButton {
+  position: relative;
+  border: 1px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1c1d1f;
+  text-decoration: none;
+  max-height: 2.6rem;
+  background-color: #fff;
+}
+
+.whiteButton:hover {
+  background-color: #e0e0e0;
+  color: #1c1d1f;
+  cursor: pointer;
+}
+.whiteButton h3 {
+  font-weight: 800;
+  padding: 1rem 0;
+}
+
+.purpleButton {
+  position: relative;
+  border: 1px #a435f0 solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  max-height: 2.6rem;
+  background-color: #a435f0;
+}
+
+.purpleButton:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+}
+.purpleButton h3 {
+  font-weight: 800;
+  padding: 1rem 0;
+}
+
+.courseIncludes > h3 {
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.courseIncludes > div {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  line-height: 1.3rem;
+  min-width: 50%;
+  max-width: 50%;
+  margin: 0.2rem 0;
+}
+.courseIncludes > div > p {
+  font-size: 12px;
+  min-width: 200px;
+}
+.checkMark {
+  transform: scale(0.8);
+  margin-right: 1rem;
+}
+
+.share {
+  display: flex;
+  justify-content: space-between;
+}
+.share > h3 {
+  font-weight: 800;
+  text-decoration-line: underline;
+  font-size: 12px;
+  line-height: 1rem;
+}
+.share > h3:hover {
+  cursor: pointer;
+}
+
+.udemyAd {
+  border-top: 1px solid #d1d7dc;
+  padding: 1rem 22px;
+  display: flex;
+  flex-direction: column;
+}
+.udemyAd > * {
+  margin: 5px 0;
+}
+.udemyAd > article > h3 {
+  font-weight: 800;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.udemyAd > article > p {
+  font-size: 14px;
+}

@@ -1,0 +1,25 @@
+.summary {
+  background-color: #f7f9fa;
+  border-top: 1px solid #d1d7dc;
+  border-bottom: 1px solid #d1d7dc;
+}
+.summary * {
+  color: #1c1d1f;
+}
+.title {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.playIcon{
+  margin-right: 1rem;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  padding: 0.5rem 0;
+}
+.infoContainer{
+
+}
